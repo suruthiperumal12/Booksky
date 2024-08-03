@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Merriweather", serif;
+    color:beige;
+}
+.navbar{
+    background-color:#269f9f;
+    padding:20px;
+}
+.container{
+    padding:10px;
+}
+.book-container{
+    padding:15px;
+    width:25%;
+    background:#246272;
+    border-radius:10px;
+    margin:30px;
+    display:inline-block;
+    vertical-align: top;
+    color:white;
+}
+.book-container h2{
+    color:#269f9f;
+}
+.book-container button{
+    color:white;
+    background-color: #269f9f;
+    padding:10px 5px 10px 5px;
+    border-radius:10px;
+    border:none;
+    margin-top:10px;
+}
+.popup-container{
+    color:#246272;
+    background-color:#269f9f;
+    padding:10px 20px;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    border-radius:100%;
+    border: none;
+    font-size: 40px;
+    z-index: 1000;
+}
+.popup-overlay{
+    background-color: #269f9f;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    opacity:0.8;
+    z-index: 1;
+    display: none;
+    
+}
+.popup-box{
+    background-color: #246272;
+    width:40%;
+    padding: 40px;
+    border-radius: 10px;
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+.popup-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid #269f9f;
+}
+.popup-box textarea{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border:1px solid #269f9f;
+}
+.popup-box input::placeholder{
+    color:white;
+}
+.popup-box textarea::placeholder{
+    color: white;
+}
+.popup-box button{
+    color:white;
+    background-color: #269f9f;
+    padding:10px 5px 10px 5px;
+    border-radius:10px;
+    border:none;
+    margin-top:10px;
+}
+.popup-box input:focus{
+    outline: none;
+}
+.popup-box textarea:focus{
+    outline:none;
+}
