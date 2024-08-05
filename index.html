@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="navbar">
         <h1>Book world</h1>
     </div>
     <div class="container">
-    <div class="book-container">
-        <h2>The god of small things</h2>
-        <h5>Arundhati Roy</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat non odit veniam eius tenetur nostrum, accusantium impedit quas ex ea laborum magnam debitis esse quia ipsam excepturi? Dicta, fugiat.</p>
-        <button id="delete-btn" onclick="deletebook(event)">Delete</button>
+        <div class="book-container">
+            <h2>The god of small things</h2>
+            <h5>Arundhati Roy</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat non odit veniam eius tenetur
+                nostrum, accusantium impedit quas ex ea laborum magnam debitis esse quia ipsam excepturi? Dicta, fugiat.
+            </p>
+            <button id="delete-btn" onclick="deletebook(event)">Delete</button>
+        </div>
+        <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" id="title" placeholder="Booktitle"><br>
+                <input type="text" id="author" placeholder="Author"><br>
+                <textarea id="description" placeholder="Bookdescription"></textarea><br>
+                <button id="add-book">ADD</button>
+                <button id="cancel-book">CANCEL</button>
+            </form>
+        </div>
+        <button class="popup-container" id="add-popup-btn">+</button>
     </div>
-    <div class="popup-overlay"></div>
-    <div class="popup-box">
-        <h2>Add Book</h2>
-        <form>
-            <input type="text" id="title"  placeholder="Booktitle"><br>
-            <input type="text" id="author"  placeholder="Author"><br>
-            <textarea id="description" placeholder="Bookdescription"></textarea><br>
-            <button id="add-book">ADD</button>
-            <button id="cancel-book">CANCEL</button>
-        </form>
-    </div>
-    <button class="popup-container" id="add-popup-btn">+</button>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
